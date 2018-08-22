@@ -4,10 +4,6 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 body{
 	color: #1a1a1a;
 	font-family: 'Exo 2', sans-serif;
-	
-	/* font-family: 'Asap Condensed', sans-serif; */
-	/* font-family: 'Quicksand', sans-serif; */
-	/* font-family: 'Open Sans', sans-serif; */
 	font-size: 1em;
 	line-height: 1.33333;
 	background-color: #fff;
@@ -85,9 +81,9 @@ nav li a{
 }
 #intro1{
 	position: relative;
-	margin:-20% 0 12% 60%;
+	margin:-24% 0 12% 60%;
 	text-align: center;
-	font-size: 1.2em;
+	font-size: 1.4em;
 	word-wrap: break-word;
 	width:35%;
 }
@@ -158,18 +154,20 @@ nav li a{
 }
 #intro2{
 	position: relative;
-	margin:-20% 0 20% 20%;
-	text-align: center;
-	font-size: 1.2em;
+	margin:-33% 0 10% 60%;
+	text-align: left;
+	font-size: 2em;
 	word-wrap: break-word;
-	width:35%;
+	width:40%;
+	color:white;
+	line-height: 2.5em;
 }
 
 
 
 #product{
 	width:80%;
-	margin:20px auto 20px auto;
+	padding:20px 0;
 	display: grid;
 	grid-gap: 1em;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -186,7 +184,9 @@ nav li a{
 .item p{
 	word-wrap: break-word;
 }
-
+#background3{
+	display: none;
+}
 #backgroundimg3{
 	text-align: center;
 	height: auto;
@@ -215,41 +215,53 @@ nav li a{
 	text-align:center;
 	border-radius:50%;
 	font-weight: 600;
+	opacity: 0.9;
+	border:3px outset gainsboro;
+	box-shadow: 3px 3px 5px 2px lightgray;
 }
 .bubble div{
 	display: table-cell;
 	vertical-align: middle;
 }
+.bubble span{
+	display: none;
+}
+
 
 #shirt{
+	background: url(./img/T-shirt.jpg) no-repeat center;
+	background-size: contain;
+	color:white;
+	
 	width:115px;
 	height:115px;
 	position: absolute;
 	top:10%;
-	left:5%;
-	background:#a8ff78;
+	left:10%;
 	animation:shirt 4s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-out;
 	animation-delay: 0s;
 	transform: scale(1);
-	
-
+	/* transform: translate(0,0); */
 }
+
 @keyframes shirt
 {
-	0% {background:#a8ff78;transform: scale(1);}
-	50% {background:#78ffd6;transform: scale(1.5);}
-	0% {background:#a8ff78;transform: scale(1);}
+	0% {transform: scale(1)}
+	50% {transform: scale(1.5)}
+	0% {transform: scale(1)}
 }
-
 #seat{
+	background: url(./img/sweatpant.jpg) no-repeat center;
+	background-size: contain;
+	color:lawngreen;
+	
 	width:165px;
 	height:165px;
 	position: absolute;
 	top:45%;
 	left:10%;
-	background:#2193b0 ;
 	animation:seat 4s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-out;
@@ -259,18 +271,22 @@ nav li a{
 }
 @keyframes seat
 {
-	0% {background:#2193b0 ;transform: scale(1)}
-	50% {background:#6dd5ed ;transform: scale(1.2)}
-	0% {background:#2193b0 ;transform: scale(1)}
+	0% { transform: scale(1)}
+	50% {transform: scale(1.2)}
+	0% { transform: scale(1)}
 }
 
 #yoga{
+	background: url(./img/yoga.jpg) no-repeat center;
+	background-size: contain;
+	color:blueviolet;
+	
+
 	width:150px;
 	height:150px;
 	position: absolute;
-	top:15%;
-	left:25%;
-	background:#ee9ca7;
+	top:10%;
+	left:23%;
 	animation:yoga 4s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-out;
@@ -280,18 +296,22 @@ nav li a{
 }
 @keyframes yoga
 {
-	0% {background:#ee9ca7;transform: scale(0.8)}
-	50% {background:#ffdde1;transform: scale(1.3)}
-	0% {background:#ee9ca7;transform: scale(0.8)}
+	0% {transform: scale(0.8)}
+	50% {transform: scale(1.3)}
+	0% {transform: scale(0.8)}
 }
 
 #cover{
+	background: url(./img/coverup.jpg) no-repeat center;
+	background-size: contain;
+	color:sienna;
+	
+
 	width:130px;
 	height:130px;
 	position: absolute;
-	top:20%;
-	left:45%;
-	background:#b91d73;
+	top:12%;
+	left:40%;
 	animation:cover 4s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-out;
@@ -301,18 +321,22 @@ nav li a{
 }
 @keyframes cover
 {
-	0% {background:#b91d73;transform: scale(1)}
-	50% {background:#f953c6;transform: scale(1.4)}
-	0% {background:#b91d73;transform: scale(1)}
+	0% {transform: scale(1)}
+	50% {transform: scale(1.4)}
+	0% {transform: scale(1)}
 }
 
 #flee{
+	background: url(./img/fleece.jpg) no-repeat center;
+	background-size: contain;
+	color:lavenderblush;
+	
+
 	width:145px;
 	height:145px;
 	position: absolute;
 	top:15%;
-	left:60%;
-	background:#11998e;
+	left:55%;
 	animation:flee 4s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-out;
@@ -322,18 +346,22 @@ nav li a{
 }
 @keyframes flee
 {
-	0% {background:#11998e;transform: scale(1)}
-	50% {background:#38ef7d;transform: scale(1.2)}
-	0% {background:#11998e;transform: scale(1)}
+	0% {transform: scale(1)}
+	50% {transform: scale(1.2)}
+	0% {transform: scale(1)}
 }
 
 #swim{
+	background: url(./img/bikini.jpg) no-repeat center;
+	background-size: contain;
+	color:crimson;
+	
+
 	width:140px;
 	height:140px;
 	position: absolute;
-	top:50%;
-	left:70%;
-	background:#fc4a1a;
+	top:45%;
+	left:65%;
 	animation: swim 4s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-out;
@@ -343,17 +371,21 @@ nav li a{
 }
 @keyframes swim
 {
-	0% {background:#fc4a1a;transform: scale(1)}
-	50% {background:#f7b733;transform: scale(1.2)}
-	0% {background:#fc4a1a;transform: scale(1)}
+	0% {transform: scale(1)}
+	50% {transform: scale(1.2)}
+	0% {transform: scale(1)}
 }
 #sweatshirt{
+	background: url(./img/sweatshirt.jpg) no-repeat center;
+	background-size: contain;
+	color:darkmagenta;
+	
+
 	width:120px;
 	height:120px;
 	position: absolute;
-	top:55%;
-	left:35%;
-	background:#00f260;
+	top:50%;
+	left:32%;
 	animation: sweatshirt 4s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-out;
@@ -363,18 +395,22 @@ nav li a{
 }
 @keyframes sweatshirt
 {
-	0% {background:#00f260;transform: scale(1)}
-	50% {background:#0575e6;transform: scale(1.6)}
-	0% {background:#00f260;transform: scale(1)}
+	0% {transform: scale(1)}
+	50% {transform: scale(1.6)}
+	0% {transform: scale(1)}
 }
 
 #sleep{
+	background: url(./img/sleep.jpg) no-repeat center;
+	background-size: contain;
+	color:midnightblue;
+	
+
 	width:115px;
 	height:115px;
 	position: absolute;
 	top:10%;
-	left:80%;
-	background:#283c86;
+	left:75%;
 	animation: sleep 4s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
@@ -384,18 +420,22 @@ nav li a{
 }
 @keyframes sleep
 {
-	0% {background:#283c86;transform: scale(1)}
-	50% {background:#45a247;transform: scale(1.4)}
-	0% {background:#283c86;transform: scale(1)}
+	0% {transform: scale(1)}
+	50% {transform: scale(1.4)}
+	0% {transform: scale(1)}
 }
 
 #sport{
+	background: url(./img/sport.jpg) no-repeat center;
+	background-size: contain;
+	color:black;
+	
+
 	width:100px;
 	height:100px;
 	position: absolute;
 	top:55%;
-	left:85%;
-	background:#ee0979;
+	left:80%;
 	animation: sport 4s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-out;
@@ -405,18 +445,22 @@ nav li a{
 }
 @keyframes sport
 {
-	0% {background:#ee0979;transform: scale(1)}
-	50% {background:#ff6a00;transform: scale(1.6)}
-	0% {background:#ee0979;transform: scale(1)}
+	0% {transform: scale(1)}
+	50% {transform: scale(1.6)}
+	0% {transform: scale(1)}
 }
 
 #hoody{
+	background: url(./img/hoody.jpg) no-repeat center;
+	background-size: contain;
+	color:lawngreen;
+	
+
 	width:95px;
 	height:95px;
 	position: absolute;
 	top:55%;
-	left:55%;
-	background:#6a3093;
+	left:50%;
 	animation: hoody 4s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-out;
@@ -426,10 +470,11 @@ nav li a{
 }
 @keyframes hoody
 {
-	0% {background:#6a3093;transform: scale(1)}
-	50% {background:#a044ff;transform: scale(1.7)}
-	0% {background:#6a3093;transform: scale(1)}
+	0% {transform: scale(1)}
+	50% {transform: scale(1.7)}
+	0% {transform: scale(1)}
 }
+
 
 
 
