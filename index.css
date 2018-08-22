@@ -10,14 +10,14 @@ body{
 }
 #topinfo{
 	font-size: 0.8em;
-	height:50px;
-	padding:2px 0 2px 8%;
+	height:45px;
+	padding:0 0 0 8%;
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
 }
 #smi{
-	padding:0 10% 0 0;
+	padding:0 8% 0 0;
 	height:40px;
 }
 #smi img{
@@ -515,7 +515,10 @@ footer{
 
 @media (max-width:768px){
 	#topinfo{
-		text-align: center;
+		height:30px;
+	}
+	#topinfo p{
+		margin:auto;
 	}
 	#smi{
 		display: none;
